@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Component library</title>
+</head>
+<body>
+
+    <div class="heading-top">
+      <h1>Welcome</h1>
+      <br>
+      <h1>to my component library</h1>
+    <div><img src="images/library.svg"></div>
+  </div>
+
+  <div class="container-main">
+    <div class="box-menu">
+      <p><a href="#">Avatar</a></p>
+      <p><a href="#">Banner</a></p>
+      <p><a href="#">Button</a></p>
+      <p><a href="#">Card category</a></p>
+      <p><a href="#">Card product</a></p>
+      <p><a href="#">Card trip</a></p>
+      <p><a href="#">Card grid</a></p>
+      <p><a href="#">Footer</a></p>
+      <p><a href="#">Search form</a></p>
+    </div>
+
+    <div class="container-components">
+      <div class="component-box">
+        <div class="avatar-shapes">
+          <p>Avatar</p>
+          <img class="avatar" alt="avatar" src="https://kitt.lewagon.com/placeholder/users/cveneziani"/>
+          <img class="avatar-large" alt="avatar-large" src="https://kitt.lewagon.com/placeholder/users/arthur-littm"/>
+          <img class="avatar-bordered" alt="avatar-bordered" src="https://kitt.lewagon.com/placeholder/users/sarahlafer"/>
+          <img class="avatar-square" alt="avatar-square" src="https://kitt.lewagon.com/placeholder/users/krokrob"/>
+        </div>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <p>
+          <pre><code>
+  &lt;img class=&quot;avatar&quot; alt=&quot;avatar&quot; src=&quot;https://kitt.lewagon.com/placeholder/users/cveneziani&quot;/&gt;
+  &lt;img class=&quot;avatar-large&quot; alt=&quot;avatar-large&quot; src=&quot;https://kitt.lewagon.com/placeholder/users/arthur-littm&quot;/&gt;
+  &lt;img class=&quot;avatar-bordered&quot; alt=&quot;avatar-bordered&quot; src=&quot;https://kitt.lewagon.com/placeholder/users/sarahlafer&quot;/&gt;
+  &lt;img class=&quot;avatar-square&quot; alt=&quot;avatar-square&quot; src=&quot;https://kitt.lewagon.com/placeholder/users/krokrob&quot;/&gt;</code></pre>
+          </p>
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <br>
+            .avatar {
+              <br>
+              width: 40px;
+              <br>
+              border-radius: 50%;
+              <br>
+            }
+              <br>
+              <br>
+            .avatar-large {
+              <br>
+              width: 56px;
+              <br>
+              border-radius: 50%;
+              <br>
+            }
+              <br>
+              <br>
+            .avatar-bordered {
+              <br>
+              width: 40px;
+              <br>
+              border-radius: 50%;
+              <br>
+              box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+              <br>
+              border: white 1px solid;
+              <br>
+            }
+              <br>
+              <br>
+            .avatar-square {
+              <br>
+              width: 40px;
+              <br>
+              border-radius: 0px;
+              <br>
+              box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+              <br>
+              border: white 1px solid;
+              <br>
+            }
+          </div>
+        </div>
+      </div>
+
+      <div class="component-box">
+        <div class="avatar-shapes">
+          <p>Banner</p>
+            <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+                <div class="container">
+                  <h1>Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!</h1>
+                <p>Change your life and learn to code at one of our campuses around the world.</p>
+                <a class="btn btn-flat" href="#">Apply now</a>
+                </div>
+              </div>
+            </div>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile-banner" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <p>
+          <pre><code>
+&lt;div class=&quot;banner&quot; style=&quot;background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;h1&gt;Le Wagon brings &lt;strong&gt;tech skills&lt;/strong&gt; to &lt;strong&gt;creative people&lt;/strong&gt;!&lt;/h1&gt;
+    &lt;p&gt;Change your life and learn to code at one of our campuses around the world.&lt;/p&gt;
+    &lt;a class=&quot;btn btn-flat&quot; href=&quot;#&quot;&gt;Apply now&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+        </p>
+        </div>
+        <div class="tab-pane fade" id="profile-banner" role="tabpanel" aria-labelledby="profile-tab">
+          <br>
+          .banner {
+          <br>
+            background-size: cover;
+          <br>
+            background-position: center;
+          <br>
+            padding: 150px 0;
+          <br>
+          }
+          <br>
+          <br>
+
+          .banner h1 {
+          <br>
+            margin: 0;
+          <br>
+            color: white;
+          <br>
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+          <br>
+            font-size: 32px;
+          <br>
+            font-weight: bold;
+          <br>
+          }
+          <br>
+          <br>
+          .banner p {
+          <br>
+            font-size: 20px;
+          <br>
+            color: white;
+          <br>
+            opacity: .7;
+          <br>
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+          <br>
+          }
+          <br>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
