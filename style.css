@@ -15,12 +15,11 @@
   width: 20%;
   background-color: #D0F0E4;
   border-radius: 4px;
-  padding: 100px;
+  padding: 50px;
 }
 
 .container-components {
   width: 80%;
-  margin: 20px;
   padding: 0 100px;
 }
 
@@ -37,7 +36,7 @@
   background-color: grey;
 }
 
-.avatar-shapes {
+.margin-bottom {
   margin-bottom: 10px;
 }
 
