@@ -1,9 +1,11 @@
 :root {
   --main-color: #3885f2;
+  --secondary-color: #FBB49C;
+  --ternary-color: #D8B1F9;
 }
 
 body {
-  background: #f7f5f5;
+  background: #ededed;
 }
 
 h1 {
@@ -14,13 +16,25 @@ h1 {
   color: blue;
 }
 
+.language-markup {
+  color: #979595;
+}
+
 .tag-color {
   color: var(--main-color);
 }
 
+.attribute-color {
+  color: var(--secondary-color);
+}
+
+.attribute-description {
+  color: var(--ternary-color);
+}
+
 .banner-top {
   background-image: url(images/background.png);
-  height: 450px;
+  height: 200px;
   margin-bottom: 40px;
   background-size: cover;
   background-position: center;
@@ -75,7 +89,7 @@ h1 {
   padding: 20px;
   border-radius: 4px;
   margin-bottom: 20px;
-  background: #f8e5bd99;
+  background: #f7f5f5;
 }
 
 /*Avatar*/
@@ -335,7 +349,7 @@ p, ul {
   position: relative;
 }
 
-.search-form-control .btn {
+.search-form-control .btn-classic {
   position: absolute;
   top: 8px;
   bottom: 8px;
@@ -343,7 +357,7 @@ p, ul {
 }
 
 .search-form-control .form-control {
-  height: 3.5rem;
+  height: 68px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   border: 1px solid #E7E7E7;
 }
