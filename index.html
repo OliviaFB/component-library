@@ -185,10 +185,10 @@ Without gradient:
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="html-buttons" role="tabpanel" aria-labelledby="home-tab">
           <p>
-          <pre><code>
-&lt;a class=&quot;btn-ghost&quot; href=&quot;#&quot;&gt;Buy here&lt;/a&gt;
-&lt;a class=&quot;btn-classic&quot; href=&quot;#&quot;&gt;Book now&lt;/a&gt;
-&lt;a class=&quot;btn-large&quot; href=&quot;#&quot;&gt;Start now&lt;/a&gt;
+          <pre><code class="language-markup">
+<span class="tag-color">&lt;a</span> <span class="attribute-color">class</span>=&quot;<span class="attribute-description">btn-ghost</span>&quot; <span class="attribute-color">href</span>=&quot;<span class="attribute-description">#</span>&quot;&gt;Buy here<span class="tag-color">&lt;/a&gt;</span>
+<span class="tag-color">&lt;a</span> <span class="attribute-color">class</span>=&quot;<span class="attribute-description">btn-classic</span>&quot; <span class="attribute-color">href</span>=&quot;<span class="attribute-description">#</span>&quot;&gt;Book now<span class="tag-color">&lt;/a&gt;</span>
+<span class="tag-color">&lt;a</span> <span class="attribute-color">class</span>=&quot;<span class="attribute-description">btn-large</span>&quot; <span class="attribute-color">href</span>=&quot;<span class="attribute-description">#</span>&quot;&gt;Start now<span class="tag-color">&lt;/a&gt;</span>
           </code></pre>
         </p>
         </div>
@@ -263,18 +263,18 @@ Without gradient:
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="html-card-category" role="tabpanel" aria-labelledby="home-tab">
           <p>
-          <pre><code>
+          <pre><code class="language-markup">
 With gradient (as component above):
 
-&lt;div class=&quot;card-category&quot; style=&quot;background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)&quot;&gt;
+<span class="tag-color">&lt;div</span> <span class="attribute-color">class</span>=&quot;<span class="attribute-description">card-category</span>&quot; <span class="attribute-color">style</span>=&quot;<span class="attribute-description">background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)</span>&quot;&gt;
   Morning
-&lt;/div&gt;
+<span class="tag-color">&lt;/div&gt;</span>
 
 Without gradient:
 
-&lt;div class=&quot;card-category&quot; style=&quot;background-image: url(https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)&quot;&gt;
+<span class="tag-color">&lt;div</span> <span class="attribute-color">class</span>=&quot;<span class="attribute-description">card-category</span>&quot; <span class="attribute-color">style</span>=&quot;<span class="attribute-description">url(https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)</span>&quot;&gt;
   Morning
-&lt;/div&gt;
+<span class="tag-color">&lt;/div&gt;</span>
 
           </code></pre>
           </p>
@@ -307,15 +307,15 @@ Without gradient:
             <div class="card-horizontal">
               <img src="https://images.pexels.com/photos/737586/pexels-photo-737586.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
               <div class="card-horizontal-infos">
-                <h2>Your text here</h2>
-                <p>Some description here with <strong>relevant info</strong> only.</p>
+                <h2>Horizontal title</h2>
+                <p>horizontal description with <strong>relevant info</strong> only.</p>
               </div>
             </div>
         </div>
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#html-product-card" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#html-horizontal-card" role="tab" aria-controls="home" aria-selected="true">HTML</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id="profile-tab" data-toggle="tab" href="#css-horizontal-card" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
@@ -324,14 +324,14 @@ Without gradient:
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="html-horizontal-card" role="tabpanel" aria-labelledby="home-tab">
           <p>
-            <pre><code>
-&lt;div class=&quot;card-horizontal&quot;&gt;
-  &lt;img src=&quot;https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg&quot; /&gt;
-  &lt;div class=&quot;card-horizontal-infos&quot;&gt;
-    &lt;h2&gt;horizontal name&lt;/h2&gt;
-    &lt;p&gt;horizontal description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+            <pre><code class="language-markup">
+<span class="tag-color">&lt;div</span> <span class="attribute-color">class</span>=&quot;<span class="attribute-description">card-horizontal</span>&quot;<span class="tag-color">&gt;</span>
+  <span class="tag-color">&lt;img</span> <span class="attribute-color">src</span>=&quot;<span class="attribute-description">https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg</span>&quot;<span class="tag-color">/&gt;</span>
+  <span class="tag-color">&lt;div</span> <span class="attribute-color">class</span>=&quot;<span class="attribute-description">card-horizontal-infos</span>&quot;<span class="tag-color">&gt;</span>
+    <span class="tag-color">&lt;h2&gt;</span>horizontal title<span class="tag-color">&lt;/h2&gt;</span>
+    <span class="tag-color">&lt;p&gt;</span>horizontal description with <span class="tag-color">&lt;strong&gt;</span>relevant info<span class="tag-color">&lt;/strong&gt;</span> only.<span class="tag-color">&lt;/p&gt;</span>
+  <span class="tag-color">&lt;/div&gt;</span>
+<span class="tag-color">&lt;/div&gt;</span>
             </code></pre>
           </p>
           </div>
@@ -402,7 +402,7 @@ Without gradient:
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="html-card-vertical" role="tabpanel" aria-labelledby="home-tab">
           <p>
-          <pre><code>
+          <pre><code class="language-markup">
 &lt;div class=&quot;card-vertical&quot;&gt;
   &lt;img src=&quot;https://images.pexels.com/photos/2074746/pexels-photo-2074746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260&quot; /&gt;
   &lt;div class=&quot;card-vertical-infos&quot;&gt;
@@ -492,7 +492,7 @@ Without gradient:
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="html-card-grid" role="tabpanel" aria-labelledby="home-tab">
           <p>
-          <pre><code>
+          <pre><code class="language-markup">
 &lt;div class=&quot;cards&quot;&gt;
   &lt;div class=&quot;card-category&quot; style=&quot;background-image: url(https://images.pexels.com/photos/9258712/pexels-photo-9258712.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500)&quot;&gt;
     Mexican food
@@ -594,7 +594,7 @@ Without gradient:
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="html-footer" role="tabpanel" aria-labelledby="home-tab">
           <p>
-<pre><code>
+          <pre><code class="language-markup">
 &lt;div class=&quot;footer&quot;&gt;
   &lt;p&gt;This is a nice footer. Use it as you please.&lt;/p&gt;
   &lt;div&gt;
@@ -617,7 +617,7 @@ Without gradient:
   &lt;/ul&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-</code></pre>
+        </code></pre>
           </p>
           </div>
           <div class="tab-pane fade" id="css-footer" role="tabpanel" aria-labelledby="profile-tab">
@@ -686,7 +686,7 @@ p, ul {
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="html-searchform" role="tabpanel" aria-labelledby="home-tab">
           <p>
-          <pre><code>
+          <pre><code class="language-markup">
 &lt;form novalidate=&quot;novalidate&quot; class=&quot;simple_form search&quot; action=&quot;/&quot; accept-charset=&quot;UTF-8&quot; method=&quot;get&quot;&gt;&lt;input name=&quot;utf8&quot; type=&quot;hidden&quot; value=&quot;&amp;#x2713;&quot; /&gt;
   &lt;div class=&quot;search-form-control form-group&quot;&gt;
     &lt;input class=&quot;form-control string required&quot; type=&quot;text&quot; name=&quot;search[query]&quot; id=&quot;search_query&quot; /&gt;
