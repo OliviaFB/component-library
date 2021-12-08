@@ -3,40 +3,41 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/1b2ed3d9ff.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <title>Component library</title>
 </head>
 <body>
 
-<div class="banner banner-top">
-  <div class="container">
-    <h1>This is a component library</strong>!</h1>
+<div class="banner-top">
+  <div class="container" style="padding-top: 90px;">
+    <h1>Hi! This is a component library.</h1>
     <p>Made of the components I use the most to code my own projects.</p>
   </div>
 </div>
 
   <div class="container-main">
     <div class="box-menu">
-      <p>Menu</p>
-      <p><a href="#avatar">Avatar</a></p>
-      <p><a href="#banner">Banner</a></p>
-      <p><a href="#buttons">Buttons</a></p>
-      <p><a href="#card-category">Card category</a></p>
-      <p><a href="#card-product">Card product</a></p>
-      <p><a href="#card-trip">Card trip</a></p>
-      <p><a href="#card-grid">Card grid</a></p>
-      <p><a href="#footer">Footer</a></p>
-      <p><a href="#searchform">Search form</a></p>
+      <h1>Menu</h1>
+      <div class="menu-links"><a href="#avatar">Avatar</a></div>
+      <div class="menu-links"><a href="#banner">Banner</a></div>
+      <div class="menu-links"><a href="#buttons">Buttons</a></div>
+      <div class="menu-links"><a href="#card-category">Card category</a></div>
+      <div class="menu-links"><a href="#card-product">Card product</a></div>
+      <div class="menu-links"><a href="#card-vertical">Card vertical</a></div>
+      <div class="menu-links"><a href="#card-grid">Card grid</a></div>
+      <div class="menu-links"><a href="#footer">Footer</a></div>
+      <div class="menu-links"><a href="#searchform">Search form</a></div>
     </div>
 
     <div class="container-components">
       <div class="component-box">
         <div class="margin-bottom">
           <h1 id="avatar">Avatar</h1>
-          <img class="avatar" alt="avatar" src="https://kitt.lewagon.com/placeholder/users/cveneziani"/>
-          <img class="avatar-large" alt="avatar-large" src="https://kitt.lewagon.com/placeholder/users/arthur-littm"/>
-          <img class="avatar-bordered" alt="avatar-bordered" src="https://kitt.lewagon.com/placeholder/users/sarahlafer"/>
-          <img class="avatar-square" alt="avatar-square" src="https://kitt.lewagon.com/placeholder/users/krokrob"/>
+          <img class="avatar" alt="avatar" src="images/photoperso.jpg"/>
+          <img class="avatar-large" alt="avatar-large" src="images/photoperso.jpg"/>
+          <img class="avatar-bordered" alt="avatar-bordered" src="images/photoperso.jpg"/>
+          <img class="avatar-square" alt="avatar-square" src="images/photoperso.jpg"/>
         </div>
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -51,57 +52,39 @@
           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
           <p>
           <pre><code>
-&lt;img class=&quot;avatar&quot; alt=&quot;avatar&quot; src=&quot;https://kitt.lewagon.com/placeholder/users/cveneziani&quot;/&gt;
-&lt;img class=&quot;avatar-large&quot; alt=&quot;avatar-large&quot; src=&quot;https://kitt.lewagon.com/placeholder/users/arthur-littm&quot;/&gt;
-&lt;img class=&quot;avatar-bordered&quot; alt=&quot;avatar-bordered&quot; src=&quot;https://kitt.lewagon.com/placeholder/users/sarahlafer&quot;/&gt;
-&lt;img class=&quot;avatar-square&quot; alt=&quot;avatar-square&quot; src=&quot;https://kitt.lewagon.com/placeholder/users/krokrob&quot;/&gt;
+<span class="tag-color">&lt;img</span> class=&quot;avatar&quot; alt=&quot;avatar&quot; src=&quot;http://yourimage.com&quot;<span class="tag-color">/&gt;</span>
+<span class="tag-color">&lt;img</span> class=&quot;avatar-large&quot; alt=&quot;avatar-large&quot; src=&quot;http://yourimage.com&quot;<span class="tag-color">/&gt;</span>
+<span class="tag-color">&lt;img</span> class=&quot;avatar-bordered&quot; alt=&quot;avatar-bordered&quot; src=&quot;http://yourimage.com&quot;<span class="tag-color">/&gt;</span>
+<span class="tag-color">&lt;img</span> class=&quot;avatar-square&quot; alt=&quot;avatar-square&quot; src=&quot;http://yourimage.com&quot;<span class="tag-color">/&gt;</span>
           </code></pre>
           </p>
           </div>
           <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-              <br>
-            .avatar {
-              <br>
-              width: 40px;
-              <br>
-              border-radius: 50%;
-              <br>
-            }
-              <br>
-              <br>
-            .avatar-large {
-              <br>
-              width: 56px;
-              <br>
-              border-radius: 50%;
-              <br>
-            }
-              <br>
-              <br>
-            .avatar-bordered {
-              <br>
-              width: 40px;
-              <br>
-              border-radius: 50%;
-              <br>
-              box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-              <br>
-              border: white 1px solid;
-              <br>
-            }
-              <br>
-              <br>
-            .avatar-square {
-              <br>
-              width: 40px;
-              <br>
-              border-radius: 0px;
-              <br>
-              box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-              <br>
-              border: white 1px solid;
-              <br>
-            }
+          <pre><code>
+.avatar {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.avatar-large {
+  width: 56px;
+  border-radius: 50%;
+}
+
+.avatar-bordered {
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  border: white 1px solid;
+}
+
+.avatar-square {
+  width: 40px;
+  border-radius: 0px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  border: white 1px solid;
+}
+            </code></pre>
           </div>
         </div>
       </div>
@@ -109,11 +92,11 @@
       <div class="component-box">
         <div class="margin-bottom">
           <h1 id="banner">Banner</h1>
-            <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+            <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/1684187/pexels-photo-1684187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);">
                 <div class="container">
-                  <h1>Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!</h1>
-                <p>Change your life and learn to code at one of our campuses around the world.</p>
-                <a class="btn btn-flat" href="#">Apply now</a>
+                  <h1>This is a template for beautiful banner.</h1>
+                  <p>Copy paste the HTML and CSS below to get it!</p>
+                  <a class="btn-classic" href="#buttons">Try it now</a>
                 </div>
               </div>
             </div>
@@ -131,67 +114,63 @@
           <div class="tab-pane fade show active" id="html-banner" role="tabpanel" aria-labelledby="home-tab">
           <p>
           <pre><code>
-&lt;div class=&quot;banner&quot; style=&quot;background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);&quot;&gt;
+With gradient (as component above):
+
+&lt;div class=&quot;banner&quot; style=&quot;background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/1684187/pexels-photo-1684187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);&quot;&gt;
   &lt;div class=&quot;container&quot;&gt;
-    &lt;h1&gt;Le Wagon brings &lt;strong&gt;tech skills&lt;/strong&gt; to &lt;strong&gt;creative people&lt;/strong&gt;!&lt;/h1&gt;
-    &lt;p&gt;Change your life and learn to code at one of our campuses around the world.&lt;/p&gt;
-    &lt;a class=&quot;btn btn-flat&quot; href=&quot;#&quot;&gt;Apply now&lt;/a&gt;
+    &lt;h1&gt;This is a template for beautiful banner.&lt;/h1&gt;
+    &lt;p&gt;Copy paste the HTML and CSS below to get it!&lt;/p&gt;
+    &lt;a class=&quot;btn btn-flat&quot; href=&quot;#&quot;&gt;Try it now&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+With gradient (as component above):
+
+&lt;div class=&quot;banner&quot; style=&quot;background-image: url(https://images.pexels.com/photos/1684187/pexels-photo-1684187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;h1&gt;This is a template for beautiful banner.&lt;/h1&gt;
+    &lt;p&gt;Copy paste the HTML and CSS below to get it!&lt;/p&gt;
+    &lt;a class=&quot;btn btn-flat&quot; href=&quot;#&quot;&gt;Try it now&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;
         </code></pre>
         </p>
         </div>
         <div class="tab-pane fade" id="css-banner" role="tabpanel" aria-labelledby="profile-tab">
-          <br>
-          .banner {
-          <br>
-            background-size: cover;
-          <br>
-            background-position: center;
-          <br>
-            padding: 150px 0;
-          <br>
-          }
-          <br>
-          <br>
+        <pre><code>
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
 
-          .banner h1 {
-          <br>
-            margin: 0;
-          <br>
-            color: white;
-          <br>
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-          <br>
-            font-size: 32px;
-          <br>
-            font-weight: bold;
-          <br>
-          }
-          <br>
-          <br>
-          .banner p {
-          <br>
-            font-size: 20px;
-          <br>
-            color: white;
-          <br>
-            opacity: .7;
-          <br>
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-          <br>
-          }
-          <br>
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+        </code></pre>
         </div>
       </div>
     </div>
 
       <div class="component-box">
         <div class="margin-bottom">
-          <h1 id="buttons">Buttons</h1>
-            <a class="btn btn-ghost" href="#">Write a story</a>
-            <a class="btn btn-flat" href="#">Book now</a>
-            <a class="btn btn-gradient" href="#">Start now</a>
+          <h1>Buttons</h1>
+            <div id="buttons">
+              <a class="btn-ghost" href="#">Buy here</a>
+              <a class="btn-classic" href="#">Book now</a>
+              <a class="btn-gradient" href="#">Start now</a>
+            </div>
         </div>
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -207,91 +186,60 @@
           <div class="tab-pane fade show active" id="html-buttons" role="tabpanel" aria-labelledby="home-tab">
           <p>
           <pre><code>
-&lt;a class=&quot;btn btn-ghost&quot; href=&quot;#&quot;&gt;Write a story&lt;/a&gt;
-&lt;a class=&quot;btn btn-flat&quot; href=&quot;#&quot;&gt;Book now&lt;/a&gt;
-&lt;a class=&quot;btn btn-gradient&quot; href=&quot;#&quot;&gt;Start now&lt;/a&gt;
+&lt;a class=&quot;btn-ghost&quot; href=&quot;#&quot;&gt;Buy here&lt;/a&gt;
+&lt;a class=&quot;btn-classic&quot; href=&quot;#&quot;&gt;Book now&lt;/a&gt;
+&lt;a class=&quot;btn-large&quot; href=&quot;#&quot;&gt;Start now&lt;/a&gt;
           </code></pre>
         </p>
         </div>
         <div class="tab-pane fade" id="css-buttons" role="tabpanel" aria-labelledby="profile-tab">
-          <br>
-          .btn-ghost {
-            <br>
-            color: #4A4A4A;
-            <br>
-            border: 1px solid #4A4A4A;
-            <br>
-            padding: 8px 24px;
-            <br>
-            border-radius: 50px;
-            <br>
-            font-weight: lighter;
-            <br>
-            opacity: 0.6;
-            <br>
-            transition: opacity 0.3s ease;
-            <br>
-          }
-            <br>
-            <br>
-          .btn-ghost:hover {
-            <br>
-            opacity: 1;
-            <br>
-          }
-            <br>
-            <br>
-          .btn-flat {
-            <br>
-            color: white;
-            <br>
-            padding: 8px 24px;
-            <br>
-            border-radius: 4px;
-            <br>
-            background: #1EDD88;
-            <br>
-            transition: background 0.3s ease;
-            <br>
-          }
-            <br>
-            <br>
-          .btn-flat:hover {
-            <br>
-            background: #1BCB7F;
-            <br>
-            color: white;
-            <br>
-          }
-            <br>
-            <br>
-          .btn-gradient {
-            <br>
-            color: white;
-            <br>
-            padding: 8px 24px;
-            <br>
-            border-radius: 4px;
-            <br>
-            font-weight: bold;
-            <br>
-            background: linear-gradient(#167FFB, #0F60C4);
-            <br>
-            transition: background 0.3s ease;
-            <br>
-            border: 1px solid #0F60C4;
-            <br>
-          }
-            <br>
-            <br>
-          .btn-gradient:hover {
-            <br>
-            background: linear-gradient(#147EFF, #0F67DA);
-            <br>
-            color: white;
-            <br>
-          }
-            <br>
+        <code><pre>
+
+.btn-ghost {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 11px 30px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.btn-classic {
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  background: #E1B4F9;
+  transition: background 0.3s ease;
+}
+
+.btn-classic:hover {
+  background: #c46ff2;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-gradient {
+  color: #36ba73;
+  padding: 15px 29px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(#5bf6a7, #e4f8ee);
+  transition: background 0.3s ease;
+  border: 1px solid #CFF6E1;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(#3ef698, #e4f8ee);
+  color: #36ba73;
+  text-decoration: none;
+}
+          </code></pre>
           </div>
         </div>
       </div>
@@ -299,8 +247,8 @@
       <div class="component-box">
         <div class="margin-bottom">
           <h1 id="card-category">Card category</h1>
-          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-            Breakfast
+          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
+            Morning
           </div>
         </div>
 
@@ -316,53 +264,51 @@
           <div class="tab-pane fade show active" id="html-card-category" role="tabpanel" aria-labelledby="home-tab">
           <p>
           <pre><code>
-&lt;div class=&quot;card-category&quot; style=&quot;background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)&quot;&gt;
-  Breakfast
+With gradient (as component above):
+
+&lt;div class=&quot;card-category&quot; style=&quot;background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)&quot;&gt;
+  Morning
 &lt;/div&gt;
+
+Without gradient:
+
+&lt;div class=&quot;card-category&quot; style=&quot;background-image: url(https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)&quot;&gt;
+  Morning
+&lt;/div&gt;
+
           </code></pre>
           </p>
           </div>
           <div class="tab-pane fade" id="css-card-category" role="tabpanel" aria-labelledby="profile-tab">
-              <br>
-                .card-category {
-                  <br>
-                  background-size: cover;
-                  <br>
-                  background-position: center;
-                  <br>
-                  height: 180px;
-                  <br>
-                  display: flex;
-                  <br>
-                  justify-content: center;
-                  <br>
-                  align-items: center;
-                  <br>
-                  color: white;
-                  <br>
-                  font-size: 24px;
-                  <br>
-                  font-weight: bold;
-                  <br>
-                  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-                  <br>
-                  border-radius: 5px;
-                  <br>
-                  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-                  <br>
-                }
+          <pre><code>
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+            </code></pre>
             </div>
           </div>
         </div>
 
       <div class="component-box">
         <div class="margin-bottom">
-          <h1 id="card-product">Card product</h1>
-            <div class="card-product">
-              <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-              <div class="card-product-infos">
-                <h2>Product name</h2>
-                <p>Product description with <strong>relevant info</strong> only.</p>
+          <h1 id="card-product">Card horizontal text</h1>
+            <div class="card-horizontal">
+              <img src="https://images.pexels.com/photos/737586/pexels-photo-737586.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+              <div class="card-horizontal-infos">
+                <h2>Your text here</h2>
+                <p>Some description here with <strong>relevant info</strong> only.</p>
               </div>
             </div>
         </div>
@@ -372,202 +318,147 @@
             <a class="nav-link active" id="home-tab" data-toggle="tab" href="#html-product-card" role="tab" aria-controls="home" aria-selected="true">HTML</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#css-product-card" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#css-horizontal-card" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
           </li>
         </ul>
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="html-product-card" role="tabpanel" aria-labelledby="home-tab">
+          <div class="tab-pane fade show active" id="html-horizontal-card" role="tabpanel" aria-labelledby="home-tab">
           <p>
             <pre><code>
-&lt;div class=&quot;card-product&quot;&gt;
+&lt;div class=&quot;card-horizontal&quot;&gt;
   &lt;img src=&quot;https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg&quot; /&gt;
-  &lt;div class=&quot;card-product-infos&quot;&gt;
-    &lt;h2&gt;Product name&lt;/h2&gt;
-    &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
+  &lt;div class=&quot;card-horizontal-infos&quot;&gt;
+    &lt;h2&gt;horizontal name&lt;/h2&gt;
+    &lt;p&gt;horizontal description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
             </code></pre>
           </p>
           </div>
-          <div class="tab-pane fade" id="css-product-card" role="tabpanel" aria-labelledby="profile-tab">
-              <br>
-              .card-product {
-              <br>
-                overflow: hidden;
-              <br>
-                height: 120px;
-              <br>
-                background: white;
-              <br>
-                box-shadow: 0 0 15px rgba(0,0,0,0.2);
-              <br>
-                display: flex;
-              <br>
-                align-items: center;
-              <br>
-              }
-              <br>
-              <br>
-              .card-product img {
-              <br>
-                height: 100%;
-              <br>
-                width: 120px;
-              <br>
-                object-fit: cover;
-              <br>
-              }
-              <br>
-              <br>
-              .card-product h2 {
-              <br>
-                font-size: 16px;
-              <br>
-                font-weight: bold;
-              <br>
-                margin: 0;
-              <br>
-              }
-              <br>
-              <br>
-              .card-product p {
-              <br>
-                font-size: 12px;
-              <br>
-                line-height: 1.4;
-              <br>
-                opacity: .7;
-              <br>
-                margin-bottom: 0;
-              <br>
-                margin-top: 8px;
-              <br>
-              }
-              <br>
-              <br>
-              .card-product .card-product-infos {
-              <br>
-                padding: 16px;
-              <br>
-              }
+          <div class="tab-pane fade" id="css-horizontal-card" role="tabpanel" aria-labelledby="profile-tab">
+          <pre><code>
+
+.card-horizontal {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+
+.card-horizontal img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-horizontal h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-horizontal p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-horizontal .card-horizontal-infos {
+  padding: 16px;
+}
+            </code></pre>
             </div>
           </div>
         </div>
 
       <div class="component-box">
         <div class="margin-bottom">
-          <h1 id="card-trip">Card trip</h1>
-          <div class="card-trip">
-            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-            <div class="card-trip-infos">
+          <h1 id="card-vertical">Card vertical</h1>
+          <div class="card-vertical">
+            <img src="https://images.pexels.com/photos/2074746/pexels-photo-2074746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+            <div class="card-vertical-infos">
               <div>
                 <h2>Title here</h2>
                 <p>Short description here!</p>
               </div>
-              <h2 class="card-trip-pricing">£99.99</h2>
-              <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+              <h2 class="card-vertical-pricing">€99.99</h2>
+              <img src="images/photoperso.jpg" class="card-vertical-user avatar-bordered" />
             </div>
           </div>
         </div>
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#html-card-trip" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#html-card-vertical" role="tab" aria-controls="home" aria-selected="true">HTML</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#css-card-trip" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#css-card-vertical" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
           </li>
         </ul>
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="html-card-trip" role="tabpanel" aria-labelledby="home-tab">
+          <div class="tab-pane fade show active" id="html-card-vertical" role="tabpanel" aria-labelledby="home-tab">
           <p>
           <pre><code>
-&lt;div class=&quot;card-trip&quot;&gt;
-  &lt;img src=&quot;https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg&quot; /&gt;
-  &lt;div class=&quot;card-trip-infos&quot;&gt;
+&lt;div class=&quot;card-vertical&quot;&gt;
+  &lt;img src=&quot;https://images.pexels.com/photos/2074746/pexels-photo-2074746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260&quot; /&gt;
+  &lt;div class=&quot;card-vertical-infos&quot;&gt;
     &lt;div&gt;
       &lt;h2&gt;Title here&lt;/h2&gt;
       &lt;p&gt;Short description here!&lt;/p&gt;
     &lt;/div&gt;
-    &lt;h2 class=&quot;card-trip-pricing&quot;&gt;£99.99&lt;/h2&gt;
-    &lt;img src=&quot;https://kitt.lewagon.com/placeholder/users/krokrob&quot; class=&quot;card-trip-user avatar-bordered&quot; /&gt;
+    &lt;h2 class=&quot;card-vertical-pricing&quot;&gt;£99.99&lt;/h2&gt;
+    &lt;img src=&quot;images/photoperso.jpg&quot; class=&quot;card-vertical-user avatar-bordered&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
           </code></pre>
           </p>
           </div>
-          <div class="tab-pane fade" id="css-card-trip" role="tabpanel" aria-labelledby="profile-tab">
-              <br>
-              .card-trip {
-              <br>
-                overflow: hidden;
-              <br>
-                background: white;
-              <br>
-                box-shadow: 0 0 15px rgba(0,0,0,0.2);
-              <br>
-              }
-              <br>
-              <br>
-              .card-trip > img {
-              <br>
-                height: 200px;
-              <br>
-                width: 100%;
-              <br>
-                object-fit: cover;
-              <br>
-              }
-              <br>
-              <br>
-              .card-trip h2 {
-              <br>
-                font-size: 16px;
-              <br>
-                font-weight: bold;
-              <br>
-                margin: 0;
-              <br>
-              }
-              <br>
-              <br>
-              .card-trip p {
-              <br>
-                font-size: 12px;
-              <br>
-                opacity: .7;
-              <br>
-                margin: 0;
-              <br>
-              }
-              <br>
-              <br>
-              .card-trip .card-trip-infos {
-              <br>
-                padding: 16px;
-              <br>
-                display: flex;
-              <br>
-                justify-content: space-between;
-              <br>
-                align-items: flex-end;
-              <br>
-                position: relative;
-              <br>
-              }
-              <br>
-              <br>
-              .card-trip-infos .card-trip-user {
-              <br>
-                position: absolute;
-              <br>
-                right: 16px;
-              <br>
-                top: -20px;
-              <br>
-                width: 40px;
-              <br>
-              }
+          <div class="tab-pane fade" id="css-card-vertical" role="tabpanel" aria-labelledby="profile-tab">
+          <pre><code>
+
+.card-vertical {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-vertical > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-vertical h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-vertical p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+.card-vertical .card-vertical-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-vertical-infos .card-vertical-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
+              </code></pre>
             </div>
           </div>
         </div>
@@ -576,16 +467,16 @@
         <div class="margin-bottom">
           <h1 id="card-grid">Card grid</h1>
           <div class="cards">
-            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-              Breakfast
+            <div class="card-category" style="background-image: url(https://images.pexels.com/photos/9258712/pexels-photo-9258712.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500)">
+              Mexican food
             </div>
 
-            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
-              Lunch
+            <div class="card-category" style="background-image:url(https://images.pexels.com/photos/3776950/pexels-photo-3776950.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
+              French food
             </div>
 
-            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
-              Dinner
+            <div class="card-category" style="background-image:url(https://images.pexels.com/photos/9467486/pexels-photo-9467486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
+              American food
             </div>
           </div>
         </div>
@@ -603,117 +494,94 @@
           <p>
           <pre><code>
 &lt;div class=&quot;cards&quot;&gt;
-  &lt;div class=&quot;card-category&quot; style=&quot;background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)&quot;&gt;
-    Breakfast
+  &lt;div class=&quot;card-category&quot; style=&quot;background-image: url(https://images.pexels.com/photos/9258712/pexels-photo-9258712.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500)&quot;&gt;
+    Mexican food
   &lt;/div&gt;
 
-  &lt;div class=&quot;card-category&quot; style=&quot;background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)&quot;&gt;
-    Lunch
+  &lt;div class=&quot;card-category&quot; style=&quot;background-image: url(https://images.pexels.com/photos/3776950/pexels-photo-3776950.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)&quot;&gt;
+    French food
   &lt;/div&gt;
 
-  &lt;div class=&quot;card-category&quot; style=&quot;background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)&quot;&gt;
-    Dinner
+  &lt;div class=&quot;card-category&quot; style=&quot;background-image: url(https://images.pexels.com/photos/9467486/pexels-photo-9467486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)&quot;&gt;
+    American food
   &lt;/div&gt;
 &lt;/div&gt;
           </code></pre>
           </p>
           </div>
           <div class="tab-pane fade" id="css-card-grid" role="tabpanel" aria-labelledby="profile-tab">
-              <br>
-              .cards {
-              <br>
-                display: grid;
-              <br>
-                grid-template-columns: 1fr 1fr 1fr;
-              <br>
-                grid-gap: 16px;
-              <br>
-              }
-              <br>
-              <br>
-              // Smallest device
-              <br>
-              @media (min-width: 100px) and (max-width: 575px) {
-              <br>
-                .cards {
-              <br>
-                  grid-template-columns: 1fr;
-              <br>
-                }
-              <br>
-              }
-              <br>
-              <br>
-              // Small devices (landscape phones, 576px and up)
-              <br>
-              @media (min-width: 576px) {
-              <br>
-                .cards {
-              <br>
-                  grid-template-columns: 1fr;
-              <br>
-                }
-              <br>
-              }
-              <br>
-              <br>
-              // Medium devices (tablets, 768px and up)
-              <br>
-              @media (min-width: 768px) {
-              <br>
-                .cards {
-              <br>
-                  grid-template-columns: 1fr 1fr;
-              <br>
-                }
-              <br>
-              }
-              <br>
-              <br>
-              // Large devices (desktops, 992px and up)
-              <br>
-              @media (min-width: 992px) {
-              <br>
-                .cards {
-              <br>
-                  grid-template-columns: 1fr 1fr 1fr;
-              <br>
-                }
-              <br>
-              }
-              <br>
-              <br>
-              // Extra large devices (large desktops, 1200px and up)
-              <br>
-              @media (min-width: 1200px) {
-              <br>
-                .cards {
-              <br>
-                  grid-template-columns: 1fr 1fr 1fr;
-              <br>
-                }
-              <br>
-              }
+              <pre><code>
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+              </code></pre>
             </div>
           </div>
         </div>
 
       <div class="component-box">
-        <div class="margin-bottom">
-          <h1 id="footer">Footer</h1>
+          <div class="margin-bottom">
+            <h1 id="footer">Footer</h1>
           <div class="footer">
-            <div class="footer-links">
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <div class="footer-copyright">
-              This footer is made with <i class="fas fa-heart"></i> at Le Wagon
+              <p>This is a nice footer. Use it as you please.</p>
+            <div>
+            <ul class="contactdetails">
+              <li>
+                <a href="mailto:olivia.forbault@outlook.fr" target="_blank">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/oliviaforbault/" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/OliviaFB" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
             </div>
           </div>
-        </div>
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item">
@@ -728,78 +596,71 @@
           <p>
 <pre><code>
 &lt;div class=&quot;footer&quot;&gt;
-  &lt;div class=&quot;footer-links&quot;&gt;
-    &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-    &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-    &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-    &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-    &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;footer-copyright&quot;&gt;
-    This footer is made with &lt;i class=&quot;fas fa-heart&quot;&gt;&lt;/i&gt; at Le Wagon
+  &lt;p&gt;This is a nice footer. Use it as you please.&lt;/p&gt;
+  &lt;div&gt;
+  &lt;ul class=&quot;contactdetails&quot;&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;mailto:olivia.forbault@outlook.fr&quot; target=&quot;_blank&quot;&gt;
+        &lt;i class=&quot;fas fa-envelope&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;https://www.linkedin.com/in/oliviaforbault/&quot; target=&quot;_blank&quot;&gt;
+        &lt;i class=&quot;fab fa-linkedin&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;https://github.com/OliviaFB&quot; target=&quot;_blank&quot;&gt;
+        &lt;i class=&quot;fab fa-github&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
           </p>
           </div>
           <div class="tab-pane fade" id="css-footer" role="tabpanel" aria-labelledby="profile-tab">
-              <br>
-              .footer {
-              <br>
-                background: #F4F4F4;
-              <br>
-                display: flex;
-              <br>
-                align-items: center;
-              <br>
-                justify-content: space-between;
-              <br>
-                height: 100px;
-              <br>
-                padding: 0px 50px;
-              <br>
-                color: rgba(0,0,0,0.3);
-              <br>
-              }
-              <br>
-              .footer-links {
-              <br>
-                display: flex;
-              <br>
-                align-items: center;
-              <br>
-              }
-              <br>
-              <br>
-              .footer-links a {
-              <br>
-                color: black;
-              <br>
-                opacity: 0.15;
-              <br>
-                text-decoration: none;
-              <br>
-                font-size: 24px;
-              <br>
-                padding: 0px 10px;
-              <br>
-              }
-              <br>
-              <br>
-              .footer-links a:hover {
-              <br>
-                opacity: 1;
-              <br>
-              }
-              <br>
-              .footer .fa-heart {
-              <br>
-                color: #D23333;
-              <br>
-              }
+            <code><pre>
+
+.footer {
+  display: flex;
+  align-items: center;
+  background: #CFF6E1;
+  justify-content: space-between;
+  padding: 0px 50px;
+  height: 100px;
+  color: #a75ac2;
+  margin-bottom: 20px;
+}
+p, ul {
+  margin: 0;
+}
+
+.contactdetails {
+  font-size: 40px;
+}
+
+.contactdetails li {
+  display: inline-block;
+  padding-right: 20px;
+  color: black;
+}
+
+.fab,
+.fas {
+  color: #a75ac2;
+}
+
+.fab:hover,
+.fas:hover {
+  color: #e4c3f0;
+}
+              </code></pre>
             </div>
           </div>
         </div>
+      </div>
 
       <div class="component-box">
         <div class="margin-bottom">
@@ -807,7 +668,7 @@
           <form novalidate="novalidate" class="simple_form search" action="/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
             <div class="search-form-control form-group">
               <input class="form-control string required" type="text" name="search[query]" id="search_query" />
-              <button name="button" type="submit" class="btn btn-flat">
+              <button name="button" type="submit" class="btn btn-classic">
                 <i class="fas fa-search"></i> Search
               </button>
             </div>
@@ -838,47 +699,31 @@
           </p>
           </div>
           <div class="tab-pane fade" id="css-searchform" role="tabpanel" aria-labelledby="profile-tab">
-              <br>
-              .search-form-control {
-              <br>
-                position: relative;
-              <br>
-              }
-              <br>
-              <br>
-              .search-form-control .btn {
-              <br>
-                position: absolute;
-              <br>
-                top: 8px;
-              <br>
-                bottom: 8px;
-              <br>
-                right: 8px;
-              <br>
-              }
-              <br>
-              <br>
-              .search-form-control .form-control {
-              <br>
-                height: 3.5rem;
-              <br>
-                box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-              <br>
-                border: 1px solid #E7E7E7;
-              <br>
-              }
-              <br>
-              <br>
-              .search-form-control .form-control:focus {
-              <br>
-                border: 1px solid #1EDD88;
-              <br>
-                outline: none !important;
-              <br>
-                box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-              <br>
-              }
+            <code><pre>
+
+.search-form-control {
+  position: relative;
+}
+
+.search-form-control .btn {
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  right: 8px;
+}
+
+.search-form-control .form-control {
+  height: 3.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  border: 1px solid #E7E7E7;
+}
+
+.search-form-control .form-control:focus {
+  border: 1px solid #1EDD88;
+  outline: none !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+              </code></pre>
             </div>
           </div>
         </div>
