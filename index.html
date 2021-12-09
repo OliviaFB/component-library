@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/1b2ed3d9ff.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Component library</title>
 </head>
@@ -114,7 +117,7 @@
           <div class="tab-pane fade show active" id="html-banner" role="tabpanel" aria-labelledby="home-tab">
           <p>
           <pre><code class="language-markup">
-With gradient (as component above):
+//With gradient (as component above):
 
 <span class="tag-color">&lt;div</span> <span class="attribute-color">class</span>=&quot;<span class="attribute-description">banner</span>&quot; <span class="attribute-color">style</span>=&quot;<span class="attribute-description">background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/1684187/pexels-photo-1684187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)</span>;&quot;<span class="tag-color">&gt;</span>
   <span class="tag-color">&lt;div</span> <span class="attribute-color">class</span>=&quot;<span class="attribute-description">container</span>&quot;<span class="tag-color">&gt;</span>
@@ -124,7 +127,7 @@ With gradient (as component above):
   <span class="tag-color">&lt;/div&gt;</span>
 <span class="tag-color">&lt;/div&gt;</span>
 
-Without gradient:
+//Without gradient:
 
 <span class="tag-color">&lt;div</span> <span class="attribute-color">class</span>=&quot;<span class="attribute-description">banner</span>&quot; <span class="attribute-color">style</span>=&quot;<span class="attribute-description">url(https://images.pexels.com/photos/1684187/pexels-photo-1684187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)</span>;&quot;<span class="tag-color">&gt;</span>
   <span class="tag-color">&lt;div</span> <span class="attribute-color">class</span>=&quot;<span class="attribute-description">container</span>&quot;<span class="tag-color">&gt;</span>
@@ -157,6 +160,7 @@ Without gradient:
   <span class="attribute-color">color</span>: white<span class="attribute-color">;</span>
   <span class="attribute-color">opacity</span>: .7<span class="attribute-color">;</span>
   <span class="attribute-color">text-shadow</span>: 1px 1px 3px rgba(0,0,0,0.2)<span class="attribute-color">;</span>
+  <span class="attribute-color">margin-bottom</span>: 20px<span class="attribute-color">;</span>
 }
         </code></pre>
         </div>
@@ -264,13 +268,13 @@ Without gradient:
           <div class="tab-pane fade show active" id="html-card-category" role="tabpanel" aria-labelledby="home-tab">
           <p>
           <pre><code class="language-markup">
-With gradient (as component above):
+//With gradient (as component above):
 
 <span class="tag-color">&lt;div</span> <span class="attribute-color">class</span>=&quot;<span class="attribute-description">card-category</span>&quot; <span class="attribute-color">style</span>=&quot;<span class="attribute-description">background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)</span>&quot;&gt;
   Morning
 <span class="tag-color">&lt;/div&gt;</span>
 
-Without gradient:
+//Without gradient:
 
 <span class="tag-color">&lt;div</span> <span class="attribute-color">class</span>=&quot;<span class="attribute-description">card-category</span>&quot; <span class="attribute-color">style</span>=&quot;<span class="attribute-description">url(https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)</span>&quot;&gt;
   Morning
@@ -723,6 +727,10 @@ Without gradient:
   <span class="attribute-color">border</span>: 1px solid #1EDD88<span class="attribute-color">;</span>
   <span class="attribute-color">outline</span>: none !important<span class="attribute-color">;</span>
   <span class="attribute-color">box-shadow</span>: 0 2px 6px rgba(0,0,0,0.08)<span class="attribute-color">;</span>
+}
+
+<span class="tag-color">.form-control::placeholder</span> {
+<span class="attribute-color">color</span>: #c5c2c8<span class="attribute-color">;</span>
 }
               </pre></code>
             </div>
