@@ -42,10 +42,10 @@
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><span class="html-tab">HTML</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
+            <a class="nav-link css-tab" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
           </li>
         </ul>
         <div class="tab-content" id="myTabContent">
@@ -60,29 +60,29 @@
           </p>
           </div>
           <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-          <pre><code>
-.avatar {
-  width: 40px;
-  border-radius: 50%;
+          <pre><code class="language-markup">
+<span class="tag-color">.avatar</span> {
+  <span class="attribute-color">width</span>: 40px<span class="attribute-color">;</span>
+  border-radius: 50%<span class="attribute-color">;</span>
 }
 
-.avatar-large {
-  width: 56px;
-  border-radius: 50%;
+<span class="tag-color">.avatar-large</span> {
+  <span class="attribute-color">width</span>: 56px<span class="attribute-color">;</span>
+  <span class="attribute-color">border-radius</span>: 50%<span class="attribute-color">;</span>
 }
 
-.avatar-bordered {
-  width: 40px;
-  border-radius: 50%;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-  border: white 1px solid;
+<span class="tag-color">.avatar-bordered</span> {
+  <span class="attribute-color">width</span>: 40px<span class="attribute-color">;</span>
+  <span class="attribute-color">border-radius</span>: 50%<span class="attribute-color">;</span>
+  <span class="attribute-color">box-shadow</span>: 0 1px 2px rgba(0,0,0,0.2)<span class="attribute-color">;</span>
+  <span class="attribute-color">border</span>: white 1px solid<span class="attribute-color">;</span>
 }
 
-.avatar-square {
-  width: 40px;
-  border-radius: 0px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-  border: white 1px solid;
+<span class="tag-color">.avatar-square</span> {
+  <span class="attribute-color">width</span>: 40px<span class="attribute-color">;</span>
+  <span class="attribute-color">border-radius</span>: 0px<span class="attribute-color">;</span>
+  <span class="attribute-color">box-shadow</span>: 0 1px 2px rgba(0,0,0,0.2)<span class="attribute-color">;</span>
+  <span class="attribute-color">border</span>: white 1px solid<span class="attribute-color">;</span>
 }
             </code></pre>
           </div>
@@ -103,10 +103,10 @@
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#html-banner" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#html-banner" role="tab" aria-controls="home" aria-selected="true"><span class="html-tab">HTML</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#css-banner" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
+            <a class="nav-link css-tab" id="profile-tab" data-toggle="tab" href="#css-banner" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
           </li>
         </ul>
 
@@ -137,26 +137,26 @@ Without gradient:
         </p>
         </div>
         <div class="tab-pane fade" id="css-banner" role="tabpanel" aria-labelledby="profile-tab">
-        <pre><code>
-.banner {
-  background-size: cover;
-  background-position: center;
-  padding: 150px 0;
+        <pre><code class="language-markup">
+<span class="tag-color">.banner</span> {
+  <span class="attribute-color">background-size</span>: cover<span class="attribute-color">;</span>
+  <span class="attribute-color">background-position</span>: center<span class="attribute-color">;</span>
+  <span class="attribute-color">padding</span>: 150px 0<span class="attribute-color">;</span>
 }
 
-.banner h1 {
-  margin: 0;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
-  font-weight: bold;
+<span class="tag-color">.banner h1</span> {
+  <span class="attribute-color">margin</span>: 0<span class="attribute-color">;</span>
+  <span class="attribute-color">color</span>: white<span class="attribute-color">;</span>
+  <span class="attribute-color">text-shadow</span>: 1px 1px 3px rgba(0,0,0,0.2)<span class="attribute-color">;</span>
+  <span class="attribute-color">font-size</span>: 32px<span class="attribute-color">;</span>
+  <span class="attribute-color">font-weight</span>: bold<span class="attribute-color">;</span>
 }
 
-.banner p {
-  font-size: 20px;
-  color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+<span class="tag-color">.banner p</span> {
+  <span class="attribute-color">font-size</span>: 20px<span class="attribute-color">;</span>
+  <span class="attribute-color">color</span>: white<span class="attribute-color">;</span>
+  <span class="attribute-color">opacity</span>: .7<span class="attribute-color">;</span>
+  <span class="attribute-color">text-shadow</span>: 1px 1px 3px rgba(0,0,0,0.2)<span class="attribute-color">;</span>
 }
         </code></pre>
         </div>
@@ -175,10 +175,10 @@ Without gradient:
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#html-buttons" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#html-buttons" role="tab" aria-controls="home" aria-selected="true"><span class="html-tab">HTML</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#css-buttons" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
+            <a class="nav-link css-tab" id="profile-tab" data-toggle="tab" href="#css-buttons" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
           </li>
         </ul>
 
@@ -193,51 +193,51 @@ Without gradient:
         </p>
         </div>
         <div class="tab-pane fade" id="css-buttons" role="tabpanel" aria-labelledby="profile-tab">
-        <code><pre>
+        <code><pre class="language-markup">
 
-.btn-ghost {
-  color: #4A4A4A;
-  border: 1px solid #4A4A4A;
-  padding: 11px 30px;
-  border-radius: 50px;
-  font-weight: lighter;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
+<span class="tag-color">.btn-ghost</span> {
+  <span class="attribute-color">color</span>: #4A4A4A<span class="attribute-color">;</span>
+  <span class="attribute-color">border</span>: 1px solid #4A4A4A<span class="attribute-color">;</span>
+  <span class="attribute-color">padding</span>: 11px 30px<span class="attribute-color">;</span>
+  <span class="attribute-color">border-radius</span>: 50px<span class="attribute-color">;</span>
+  <span class="attribute-color">font-weight</span>: lighter<span class="attribute-color">;</span>
+  <span class="attribute-color">opacity</span>: 0.6<span class="attribute-color">;</span>
+  <span class="attribute-color">transition</span>: opacity 0.3s ease<span class="attribute-color">;</span>
 }
 
-.btn-ghost:hover {
-  opacity: 1;
-  text-decoration: none;
+<span class="tag-color">.btn-ghost:hover</span> {
+  <span class="attribute-color">opacity</span>: 1<span class="attribute-color">;</span>
+  <span class="attribute-color">text-decoration</span>: none<span class="attribute-color">;</span>
 }
 
-.btn-classic {
-  color: white;
-  padding: 12px 24px;
-  border-radius: 4px;
-  background: #E1B4F9;
-  transition: background 0.3s ease;
+<span class="tag-color">.btn-classic</span> {
+  <span class="attribute-color">color</span>: white<span class="attribute-color">;</span>
+  <span class="attribute-color">padding</span>: 12px 24px<span class="attribute-color">;</span>
+  <span class="attribute-color">border-radius</span>: 4px<span class="attribute-color">;</span>
+  <span class="attribute-color">background</span>: #E1B4F9<span class="attribute-color">;</span>
+  <span class="attribute-color">transition</span>: background 0.3s ease<span class="attribute-color">;</span>
 }
 
-.btn-classic:hover {
-  background: #c46ff2;
-  color: white;
-  text-decoration: none;
+<span class="tag-color">.btn-classic:hover</span> {
+  <span class="attribute-color">background</span>: #c46ff2<span class="attribute-color">;</span>
+  <span class="attribute-color">color</span>: white<span class="attribute-color">;</span>
+  <span class="attribute-color">text-decoration</span>: none<span class="attribute-color">;</span>
 }
 
-.btn-gradient {
-  color: #36ba73;
-  padding: 15px 29px;
-  border-radius: 4px;
-  font-weight: bold;
-  background: linear-gradient(#5bf6a7, #e4f8ee);
-  transition: background 0.3s ease;
-  border: 1px solid #CFF6E1;
+<span class="tag-color">.btn-gradient</span> {
+  <span class="attribute-color">color</span>: #36ba73<span class="attribute-color">;</span>
+  <span class="attribute-color">padding</span>: 15px 29px<span class="attribute-color">;</span>
+  <span class="attribute-color">border-radius</span>: 4px<span class="attribute-color">;</span>
+  <span class="attribute-color">font-weight</span>: bold<span class="attribute-color">;</span>
+  <span class="attribute-color">background</span>: linear-gradient(#5bf6a7, #e4f8ee)<span class="attribute-color">;</span>
+  <span class="attribute-color">transition</span>: background 0.3s ease<span class="attribute-color">;</span>
+  <span class="attribute-color">border</span>: 1px solid #CFF6E1<span class="attribute-color">;</span>
 }
 
-.btn-gradient:hover {
-  background: linear-gradient(#3ef698, #e4f8ee);
-  color: #36ba73;
-  text-decoration: none;
+<span class="tag-color">.btn-gradient:hover</span> {
+  <span class="attribute-color">background</span>: linear-gradient(#3ef698, #e4f8ee)<span class="attribute-color">;</span>
+  <span class="attribute-color">color</span>: #36ba73<span class="attribute-color">;</span>
+  <span class="attribute-color">text-decoration</span>: none<span class="attribute-color">;</span>
 }
           </code></pre>
           </div>
@@ -254,10 +254,10 @@ Without gradient:
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#html-card-category" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#html-card-category" role="tab" aria-controls="home" aria-selected="true"><span class="html-tab">HTML</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#css-card-category" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
+            <a class="nav-link css-tab" id="profile-tab" data-toggle="tab" href="#css-card-category" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
           </li>
         </ul>
         <div class="tab-content" id="myTabContent">
@@ -280,21 +280,21 @@ Without gradient:
           </p>
           </div>
           <div class="tab-pane fade" id="css-card-category" role="tabpanel" aria-labelledby="profile-tab">
-          <pre><code>
+          <pre><code class="language-markup">
 
-.card-category {
-  background-size: cover;
-  background-position: center;
-  height: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+<span class="tag-color">.card-category</span> {
+  <span class="attribute-color">background-size</span>: cover<span class="attribute-color">;</span>
+  <span class="attribute-color">background-position</span>: center<span class="attribute-color">;</span>
+  <span class="attribute-color">height</span>: 180px<span class="attribute-color">;</span>
+  <span class="attribute-color">display</span>: flex<span class="attribute-color">;</span>
+  <span class="attribute-color">justify-content</span>: center<span class="attribute-color">;</span>
+  <span class="attribute-color">align-items</span>: center<span class="attribute-color">;</span>
+  <span class="attribute-color">color</span>: white<span class="attribute-color">;</span>
+  <span class="attribute-color">font-size</span>: 24px<span class="attribute-color">;</span>
+  <span class="attribute-color">font-weight</span>: bold<span class="attribute-color">;</span>
+  <span class="attribute-color">text-shadow</span>: 1px 1px 3px rgba(0,0,0,0.2)<span class="attribute-color">;</span>
+  <span class="attribute-color">border-radius</span>: 5px<span class="attribute-color">;</span>
+  <span class="attribute-color">box-shadow</span>: 0 0 15px rgba(0,0,0,0.2)<span class="attribute-color">;</span>
 }
             </code></pre>
             </div>
@@ -315,10 +315,10 @@ Without gradient:
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#html-horizontal-card" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#html-horizontal-card" role="tab" aria-controls="home" aria-selected="true"><span class="html-tab">HTML</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#css-horizontal-card" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
+            <a class="nav-link css-tab" id="profile-tab" data-toggle="tab" href="#css-horizontal-card" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
           </li>
         </ul>
         <div class="tab-content" id="myTabContent">
@@ -336,39 +336,39 @@ Without gradient:
           </p>
           </div>
           <div class="tab-pane fade" id="css-horizontal-card" role="tabpanel" aria-labelledby="profile-tab">
-          <pre><code>
+          <pre><code class="language-markup">
 
-.card-horizontal {
-  overflow: hidden;
-  height: 120px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
+<span class="tag-color">.card-horizontal</span> {
+  <span class="attribute-color">overflow</span>: hidden<span class="attribute-color">;</span>
+  <span class="attribute-color">height</span>: 120px<span class="attribute-color">;</span>
+  <span class="attribute-color">background</span>: white<span class="attribute-color">;</span>
+  <span class="attribute-color">box-shadow</span>: 0 0 15px rgba(0,0,0,0.2)<span class="attribute-color">;</span>
+  <span class="attribute-color">display</span>: flex<span class="attribute-color">;</span>
+  <span class="attribute-color">align-items</span>: center<span class="attribute-color">;</span>
 }
 
-.card-horizontal img {
-  height: 100%;
-  width: 120px;
-  object-fit: cover;
+<span class="tag-color">.card-horizontal img</span> {
+  <span class="attribute-color">height</span>: 100%<span class="attribute-color">;</span>
+  <span class="attribute-color">width</span>: 120px<span class="attribute-color">;</span>
+  <span class="attribute-color">object-fit</span>: cover<span class="attribute-color">;</span>
 }
 
-.card-horizontal h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
+<span class="tag-color">.card-horizontal h2</span> {
+  <span class="attribute-color">font-size</span>: 16px<span class="attribute-color">;</span>
+  <span class="attribute-color">font-weight</span>: bold<span class="attribute-color">;</span>
+  <span class="attribute-color">margin</span>: 0<span class="attribute-color">;</span>
 }
 
-.card-horizontal p {
-  font-size: 12px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
+<span class="tag-color">.card-horizontal p</span> {
+  <span class="attribute-color">font-size</span>: 12px<span class="attribute-color">;</span>
+  <span class="attribute-color">line-height</span>: 1.4<span class="attribute-color">;</span>
+  <span class="attribute-color">opacity</span>: .7<span class="attribute-color">;</span>
+  <span class="attribute-color">margin-bottom</span>: 0<span class="attribute-color">;</span>
+  <span class="attribute-color">margin-top</span>: 8px<span class="attribute-color">;</span>
 }
 
-.card-horizontal .card-horizontal-infos {
-  padding: 16px;
+<span class="tag-color">.card-horizontal .card-horizontal-infos</span> {
+  <span class="attribute-color">padding</span>: 16px<span class="attribute-color">;</span>
 }
             </code></pre>
             </div>
@@ -393,10 +393,10 @@ Without gradient:
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#html-card-vertical" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#html-card-vertical" role="tab" aria-controls="home" aria-selected="true"><span class="html-tab">HTML</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#css-card-vertical" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
+            <a class="nav-link css-tab" id="profile-tab" data-toggle="tab" href="#css-card-vertical" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
           </li>
         </ul>
         <div class="tab-content" id="myTabContent">
@@ -418,45 +418,45 @@ Without gradient:
           </p>
           </div>
           <div class="tab-pane fade" id="css-card-vertical" role="tabpanel" aria-labelledby="profile-tab">
-          <pre><code>
+          <pre><code class="language-markup">
 
-.card-vertical {
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+<span class="tag-color">.card-vertical</span> {
+  <span class="attribute-color">overflow</span>: hidden;
+  <span class="attribute-color">background</span>: white;
+  <span class="attribute-color">box-shadow</span>: 0 0 15px rgba(0,0,0,0.2);
 }
 
-.card-vertical > img {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
+<span class="tag-color">.card-vertical</ > img {
+  <span class="attribute-color">height</span>: 200px;
+  <span class="attribute-color">width</span>: 100%;
+  <span class="attribute-color">object-fit</span>: cover;
 }
 
-.card-vertical h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
+<span class="tag-color">.card-vertical h2</span> {
+  <span class="attribute-color">font-size</span>: 16px;
+  <span class="attribute-color">font-weight</span>: bold;
+  <span class="attribute-color">margin: 0;
 }
 
-.card-vertical p {
-  font-size: 12px;
-  opacity: .7;
-  margin: 0;
+<span class="tag-color">.card-vertical p</span> {
+  <span class="attribute-color">font-size</span>: 12px;
+  <span class="attribute-color">opacity</span>: .7;
+  <span class="attribute-color">margin</span>: 0;
 }
 
-.card-vertical .card-vertical-infos {
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
+<span class="tag-color">.card-vertical .card-vertical-infos</span> {
+  <span class="attribute-color">padding</span>: 16px;
+  <span class="attribute-color">display</span>: flex;
+  <span class="attribute-color">justify-content</span>: space-between;
+  <span class="attribute-color">align-items</span>: flex-end;
+  <span class="attribute-color">position</span>: relative;
 }
 
-.card-vertical-infos .card-vertical-user {
-  position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 40px;
+<span class="tag-color">.card-vertical-infos .card-vertical-user</span> {
+  <span class="attribute-color">position</span>: absolute<span class="attribute-color">;</span>
+  <span class="attribute-color">right</span>: 16px<span class="attribute-color">;</span>
+  <span class="attribute-color">top</span>: -20px<span class="attribute-color">;</span>
+  <span class="attribute-color">width</span>: 40px<span class="attribute-color">;</span>
 }
               </code></pre>
             </div>
@@ -483,10 +483,10 @@ Without gradient:
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#html-card-grid" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#html-card-grid" role="tab" aria-controls="home" aria-selected="true"><span class="html-tab">HTML</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#css-card-grid" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
+            <a class="nav-link css-tab" id="profile-tab" data-toggle="tab" href="#css-card-grid" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
           </li>
         </ul>
         <div class="tab-content" id="myTabContent">
@@ -510,48 +510,48 @@ Without gradient:
           </p>
           </div>
           <div class="tab-pane fade" id="css-card-grid" role="tabpanel" aria-labelledby="profile-tab">
-              <pre><code>
+              <pre><code class="language-markup">
 
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+<span class="tag-color">.cards</span> {
+  <span class="attribute-color">display</span>: grid<span class="attribute-color">;</span>
+  <span class="attribute-color">grid-template-columns</span>: 1fr 1fr 1fr<span class="attribute-color">;</span>
+  <span class="attribute-color">grid-gap</span>: 16px<span class="attribute-color">;</span>
 }
 
-// Smallest device
-@media (min-width: 100px) and (max-width: 575px) {
-  .cards {
-    grid-template-columns: 1fr;
+  // Smallest device
+  @media (min-width: 100px) and (max-width: 575px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
   }
-}
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  .cards {
-    grid-template-columns: 1fr;
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
   }
-}
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    .cards {
+      grid-template-columns: 1fr 1fr;
+    }
   }
-}
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    .cards {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
-}
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    .cards {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
-}
               </code></pre>
             </div>
           </div>
@@ -585,10 +585,10 @@ Without gradient:
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#html-footer" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#html-footer" role="tab" aria-controls="home" aria-selected="true"><span class="html-tab">HTML</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#css-footer" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
+            <a class="nav-link css-tab" id="profile-tab" data-toggle="tab" href="#css-footer" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
           </li>
         </ul>
         <div class="tab-content" id="myTabContent">
@@ -621,40 +621,41 @@ Without gradient:
           </p>
           </div>
           <div class="tab-pane fade" id="css-footer" role="tabpanel" aria-labelledby="profile-tab">
-            <code><pre>
+            <code><pre class="language-markup">
 
-.footer {
-  display: flex;
-  align-items: center;
-  background: #CFF6E1;
-  justify-content: space-between;
-  padding: 0px 50px;
-  height: 100px;
-  color: #a75ac2;
-  margin-bottom: 20px;
-}
-p, ul {
-  margin: 0;
+<span class="tag-color">.footer</span> {
+  <span class="attribute-color">display</span>: flex<span class="attribute-color">;</span>
+  <span class="attribute-color">align-items</span>: center<span class="attribute-color">;</span>
+  <span class="attribute-color">background</span>: #CFF6E1<span class="attribute-color">;</span>
+  <span class="attribute-color">justify-content</span>: space-between<span class="attribute-color">;</span>
+  <span class="attribute-color">padding</span>: 0px 50px<span class="attribute-color">;</span>
+  <span class="attribute-color">height</span>: 100px<span class="attribute-color">;</span>
+  <span class="attribute-color">color</span>: #a75ac2<span class="attribute-color">;</span>
+  <span class="attribute-color">margin-bottom</span>: 20px<span class="attribute-color">;</span>
 }
 
-.contactdetails {
-  font-size: 40px;
+<span class="tag-color">p, ul</span> {
+  <span class="attribute-color">margin</span>: 0<span class="attribute-color">;</span>
 }
 
-.contactdetails li {
-  display: inline-block;
-  padding-right: 20px;
-  color: black;
+<span class="tag-color">.contactdetails</span> {
+  <span class="attribute-color">font-size</span>: 40px<span class="attribute-color">;</span>
 }
 
-.fab,
-.fas {
-  color: #a75ac2;
+<span class="tag-color">.contactdetails li</span> {
+  <span class="attribute-color">display</span>: inline-block<span class="attribute-color">;</span>
+  <span class="attribute-color">padding-right</span>: 20px<span class="attribute-color">;</span>
+  <span class="attribute-color">color</span>: black<span class="attribute-color">;</span>
 }
 
-.fab:hover,
-.fas:hover {
-  color: #e4c3f0;
+<span class="tag-color">.fab,
+.fas</span> {
+  <span class="attribute-color">color</span>: #a75ac2<span class="attribute-color">;</span>
+}
+
+<span class="tag-color">.fab:hover,
+.fas:hover</span> {
+  <span class="attribute-color">color</span>: #e4c3f0<span class="attribute-color">;</span>
 }
               </code></pre>
             </div>
@@ -677,10 +678,10 @@ p, ul {
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#html-searchform" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#html-searchform" role="tab" aria-controls="home" aria-selected="true"><span class="html-tab">HTML</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#css-searchform" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
+            <a class="nav-link css-tab" id="profile-tab" data-toggle="tab" href="#css-searchform" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
           </li>
         </ul>
         <div class="tab-content" id="myTabContent">
@@ -699,31 +700,31 @@ p, ul {
           </p>
           </div>
           <div class="tab-pane fade" id="css-searchform" role="tabpanel" aria-labelledby="profile-tab">
-            <code><pre>
+            <pre><code class="language-markup">
 
-.search-form-control {
-  position: relative;
+<span class="tag-color">.search-form-control</span> {
+  <span class="attribute-color">position</span>: relative<span class="attribute-color">;</span>
 }
 
-.search-form-control .btn-classic {
-  position: absolute;
-  top: 8px;
-  bottom: 8px;
-  right: 8px;
+<span class="tag-color">.search-form-control .btn-classic</span> {
+  <span class="attribute-color">position</span>: absolute<span class="attribute-color">;</span>
+  <span class="attribute-color">top</span>: 8px<span class="attribute-color">;</span>
+  <span class="attribute-color">bottom</span>: 8px<span class="attribute-color">;</span>
+  <span class="attribute-color">right</span>: 8px<span class="attribute-color">;</span>
 }
 
-.search-form-control .form-control {
-  height: 68px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  border: 1px solid #E7E7E7;
+<span class="tag-color">.search-form-control .form-control</span> {
+  <span class="attribute-color">height</span>: 68px<span class="attribute-color">;</span>
+  <span class="attribute-color">box-shadow</span>: 0 2px 6px rgba(0,0,0,0.08)<span class="attribute-color">;</span>
+  <span class="attribute-color">border</span>: 1px solid #E7E7E7<span class="attribute-color">;</span>
 }
 
-.search-form-control .form-control:focus {
-  border: 1px solid #1EDD88;
-  outline: none !important;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+<span class="tag-color">.search-form-control .form-control:focus</span> {
+  <span class="attribute-color">border</span>: 1px solid #1EDD88<span class="attribute-color">;</span>
+  <span class="attribute-color">outline</span>: none !important<span class="attribute-color">;</span>
+  <span class="attribute-color">box-shadow</span>: 0 2px 6px rgba(0,0,0,0.08)<span class="attribute-color">;</span>
 }
-              </code></pre>
+              </pre></code>
             </div>
           </div>
         </div>

@@ -10,6 +10,17 @@ body {
 
 h1 {
   color: #D8B1F9;
+  margin-bottom: 1.5rem;
+}
+
+.css-tab {
+  color: #c5c2c8;
+  font-weight: bold;
+}
+
+.html-tab {
+  color: #877d7d;
+  font-weight: bold;
 }
 
 .blue-color {
@@ -71,7 +82,7 @@ h1 {
 }
 
 .box-menu h1 {
-  color: white;
+  color: #ededed;
 }
 
 .box-menu a {
